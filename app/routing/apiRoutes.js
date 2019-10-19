@@ -18,5 +18,9 @@ module.exports = function(app) {
     })
 
     // route to post new survey data to the API friends list
-    // app.post("/api/friends", )
+    app.post("/api/friends", function(req, res){
+        friendsData.push(req.body);
+        console.log("something might have worked...");
+        res.json(true);
+    })
 }

@@ -27,7 +27,7 @@ app.use(express.json());
 // Requiring the routes established in the api and html route files 
 // =============================================================================
 
-// require("./routing/apiRoutes")(app);
+require("./app/routing/apiRoutes")(app);
 require("./app/routing/htmlRoutes")(app);
 
 
