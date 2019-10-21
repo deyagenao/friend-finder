@@ -13,7 +13,7 @@ module.exports = function(app){
 
     //HTML Get Requests to display the static pages to user 
 
-    app.get("/home", function(req, res){
+    app.get("/", function(req, res){
         res.sendFile(path.join(__dirname, "../public/home.html"));
     });
 
